@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF9CAE;
+}
+.login-body {
+  padding:20px;
+  border-radius: 20px;
+  background-color: #fff;
+  display: flex;
+  margin-top: 50px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width:360px;
+}
+.login-body .form .Heading {
+  font-size: 28px;
+}
+.login-body .form p{
+    margin: 5px;
+    font-size: 18px;
+}
+.login-body .form .input-field{
+  border-radius: 5px;
+  border: 1px solid #ebebeb;
+  width: 90%;
+  height: 3vh;
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px;
+}
+button {
+  width: 100%;
+  height: 40px;
+  background-color: #ff5777;
+  font-size: 18px;
+  color: #fff;
+  border: 0px;
+  padding: auto;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-top:20px;
+  margin-bottom:5px;
+}
+button:hover{
+    color:#ff5777;
+    border:2px solid #ff5777;
+    background-color: #fff;
+}
+.login-body .form .upper-hr{
+    width:100%;
+    height: 2px;
+    background-color:black;
+    border: none;
+    margin-bottom: 20px;
+}
+.checkbox{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.or p{
+   color:grey; 
+}
+.or{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 750px) {
+    img{
+        display: none;
+    }
+}
