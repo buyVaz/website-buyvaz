@@ -8,9 +8,6 @@
   color: #2a2a2a;
   font-family: "Poppins", sans-serif;
 }
-.container {
-  filter: blur(30px);
-}
 /* Styling Navbar */
 .navbar {
   height: 60px;
@@ -89,9 +86,6 @@
   background-color: #ff5777;
   border-radius: 5px;
 }
-/* .navbar .nav-item4 .links ul li:hover label{
-    color: #fff;
-} */
 li:hover #icon {
   color: #fff !important;
 }
@@ -109,9 +103,6 @@ li:hover #icon {
   background-color: #fff;
   border-bottom: 2px solid #ff5777;
 }
-/* .home-label{
-    color: #ff5777;
-} */
 @media (max-width: 930px) {
   .navbar .nav-item2 {
     position: relative;
@@ -218,13 +209,6 @@ li:hover #icon {
   background-color: #2a2a2a;
   margin: 10px;
 }
-/* .Categories-heading{
-    font-size: 20px;
-    /* margin: 10px;
-    margin-left:75px; */
-/* font-weight: 600; */
-/* } */
-
 /* Products */
 .products-home {
   display: flex;
@@ -239,80 +223,4 @@ li:hover #icon {
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-/* CSS for Cart Page */
-.cart {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.cart-body {
-  border-radius: 20px;
-  background-color: #fff;
-  padding: 10px;
-  height: 350px;
-}
-.close-btn {
-  border: 2px solid #ff5777;
-  background-color: white;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  float: right;
-}
-.close-btn span {
-  font-size: 35px;
-  font-weight: 600;
-  color: #ff5777;
-}
-.cart-body img {
-  width: 50%;
-  position: relative;
-  left:50%;
-  top:0%;
-  transform: translate(-50%,0%);
-}
-.cart-body p {
-  font-size: 4vmin;
-  font-weight: 600;
-  position: absolute;
-  left:50%;
-  top:80%;
-  transform: translate(-50%,-80%);
-}
-.cart-body .content button {
-  background-color: #ff5777;
-  font-size: 3.2vmin;
-  color: #fff;
-  border: 0px;
-  padding: 5px;
-  border-radius: 5px;
-  position: absolute;
-  left:50%;
-  top:95%;
-  transform: translate(-50%,-95%);
-}
-@media (max-width:600px){
-  .cart-body img {
-    width: 100%;
-    position: relative;
-    left:50%;
-    top:20%;
-    transform: translate(-50%,0%);
-  }
-  .close-btn {
-    border: 2px solid #ff5777;
-    background-color: white;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    float: right;
-  }
-  .close-btn span {
-    font-size: 20px;
-    font-weight: 600;
-    color: #ff5777;
-  }
 }

@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="css\index.css" />
     <title>buyVaz-Home</title>
   </head>
-  <body>
-    <div class="container">
+  <body id="body">
+    <div class="container" id="container">
       <!-- Navbar -->
       <div class="navbar">
         <div class="nav-item1">
@@ -24,7 +24,9 @@
         </div>
         <div class="nav-item2">
           <div class="searchbar">
-            <span class="material-symbols-outlined" id="search-icon">search</span>
+            <span class="material-symbols-outlined" id="search-icon"
+              >search</span
+            >
             <input type="search" name="" id="" placeholder="Search" />
           </div>
         </div>
@@ -43,15 +45,13 @@
                     style="color: #ff5777"
                     >home</span
                   >
-                  <!-- <label class="home-label">Home</label> -->
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="cart.html">
                   <span class="material-symbols-outlined" id="icon"
                     >shopping_cart</span
                   >
-                  <!-- <label>My Cart</label> -->
                 </a>
               </li>
               <li>
@@ -59,7 +59,6 @@
                   <span class="material-symbols-outlined" id="icon"
                     >person</span
                   >
-                  <!-- <label>Profile</label> -->
                 </a>
               </li>
             </ul>
@@ -92,7 +91,7 @@
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="cart.html">
                 <span class="material-symbols-outlined" id="icon"
                   >shopping_cart</span
                 >
@@ -121,17 +120,6 @@
         <div class="product" id="product-1"></div>
         <div class="product" id="product-1"></div>
         <div class="product" id="product-1"></div>
-      </div>
-    </div>
-    <!-- Modal for Cart -->
-    <div class="cart">
-      <div class="cart-body">
-        <button class="close-btn"><span class="material-symbols-outlined" id="close-icon">close</span></button>
-        <div class="content">
-          <img src="img/empty-cart image.png" alt="">
-          <p>Your Cart is Empty!</p>
-          <button>Shop Now</button>
-        </div>
       </div>
     </div>
     <script src="js\index.js"></script>
