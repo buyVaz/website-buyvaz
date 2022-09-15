@@ -17,7 +17,7 @@
 .cart-body {
   background-color: #fff;
 }
-#close-btn {
+#back-btn {
     display: block;
   border: 2px solid #ff5777;
   background-color: white;
@@ -28,7 +28,7 @@
   top:20px;
   left:20px;
 }
-.close-btn span {
+.back-btn span {
   font-size: 35px;
   font-weight: 600;
   color: #ff5777;
@@ -69,14 +69,14 @@
     top: 20%;
     transform: translate(-50%, 0%);
   }
-  .close-btn {
+  .back-btn {
     border: 2px solid #ff5777;
     background-color: white;
     border-radius: 50%;
     width: 30px;
     height: 30px;
   }
-  .close-btn span {
+  .back-btn span {
     font-size: 33px;
     font-weight: 600;
     color: #ff5777;
