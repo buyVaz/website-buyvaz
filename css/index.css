@@ -146,6 +146,9 @@ li:hover #icon {
   .bottom-nav {
     display: block !important;
   }
+  footer{
+    margin-bottom: 51.5px;
+  }
 }
 @media (max-width: 557px) {
   #search-icon {
@@ -154,9 +157,6 @@ li:hover #icon {
     top: 40px;
     color: #2f2f2f;
   }
-  /* .categories{
-        transform: translateY(60px);
-    } */
 }
 /* Bottom Navbar for mobile devices */
 .bottom-nav .links ul li {
@@ -271,11 +271,9 @@ li:hover #icon {
 body::-webkit-scrollbar {
   width: 1em;
 }
- 
 body::-webkit-scrollbar-track {
   background-color: #111;
 }
- 
 body::-webkit-scrollbar-thumb {
   background-color: #ff5777;
   border-radius: 20px;
