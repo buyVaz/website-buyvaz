@@ -102,3 +102,10 @@ button:hover{
         display: none;
     }
 }
+@media (max-width: 550px) {
+  .login-body{
+    position: relative;
+    top:40px;
+    width: 70%;
+}
+}
