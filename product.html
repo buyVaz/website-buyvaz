@@ -1,17 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/product.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linking with font awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="css/product.css" />
     <title>Product-buyVaz</title>
-</head>
-<body>
-    <div class="page-body">
-        <div class="content"></div>
+  </head>
+  <body>
+    <div id="content-wrapper">
+      <div class="column">
+        <img id="featured" src="img/product1.jpg" />
+        <div id="slide-wrapper">
+          <span class="material-symbols-outlined" id="slideLeft" class="arrow">arrow_back</span>
+          <div id="slider">
+            <img class="thumbnail active" src="img/books.png" />
+            <img class="thumbnail" src="img/mobile.png" />
+            <img class="thumbnail" src="img/laptop.png" />
+            <img class="thumbnail" src="img/product1.jpg" />
+          </div>
+          <span class="material-symbols-outlined" id="slideLeft" class="arrow"
+            >arrow_forward</span
+          >
+        </div>
+      </div>
+      <div class="column">
+        <h1>Awesome Shoes</h1>
+        <hr />
+        <h3>$89.99</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
+        </p>
+        <input value="1" type="number" />
+        <a class="btn btn-dark" href="#">Add to Cart</a>
+      </div>
     </div>
-    <script>
+    <script type="text/javascript">
+      let thumbnails = document.getElementsByClassName("thumbnail");
+
+      let activeImages = document.getElementsByClassName("active");
+
+      for (var i = 0; i < thumbnails.length; i++) {
+        thumbnails[i].addEventListener("mouseover", function () {
+          console.log(activeImages);
+
+          if (activeImages.length > 0) {
+            activeImages[0].classList.remove("active");
+          }
+
+          this.classList.add("active");
+          document.getElementById("featured").src = this.src;
+        });
+      }
+
+      let buttonRight = document.getElementById("slideRight");
+      let buttonLeft = document.getElementById("slideLeft");
+
+      buttonLeft.addEventListener("click", function () {
+        document.getElementById("slider").scrollLeft -= 180;
+      });
+
+      buttonRight.addEventListener("click", function () {
+        document.getElementById("slider").scrollLeft += 180;
+      });
     </script>
-</body>
+  </body>
 </html>

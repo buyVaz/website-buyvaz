@@ -269,10 +269,11 @@ li:hover #icon {
 }
 /* Scrollar CSS */
 body::-webkit-scrollbar {
-  width: 1em;
+  width: 0.7em;
 }
 body::-webkit-scrollbar-track {
   background-color: #111;
+  border-radius:10px;
 }
 body::-webkit-scrollbar-thumb {
   background-color: #ff5777;
