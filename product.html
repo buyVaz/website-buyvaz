@@ -14,24 +14,22 @@
   </head>
   <body>
     <div id="content-wrapper">
-      <div class="column">
+      <div class="column" id="photo-column">
         <img id="featured" src="img/product1.jpg" />
         <div id="slide-wrapper">
-          <span class="material-symbols-outlined" id="slideLeft" class="arrow">arrow_back</span>
+          <!-- <span class="material-symbols-outlined" id="slideLeft" class="arrow">arrow_back</span> -->
           <div id="slider">
             <img class="thumbnail active" src="img/books.png" />
             <img class="thumbnail" src="img/mobile.png" />
             <img class="thumbnail" src="img/laptop.png" />
             <img class="thumbnail" src="img/product1.jpg" />
           </div>
-          <span class="material-symbols-outlined" id="slideLeft" class="arrow"
-            >arrow_forward</span
-          >
+          <!-- <span class="material-symbols-outlined" id="slideLeft" class="arrow">arrow_forward</span> -->
         </div>
       </div>
       <div class="column">
         <h1>Awesome Shoes</h1>
-        <hr />
+        <hr/>
         <h3>$89.99</h3>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -39,7 +37,6 @@
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book.
         </p>
-        <input value="1" type="number" />
         <a class="btn btn-dark" href="#">Add to Cart</a>
       </div>
     </div>
@@ -49,7 +46,7 @@
       let activeImages = document.getElementsByClassName("active");
 
       for (var i = 0; i < thumbnails.length; i++) {
-        thumbnails[i].addEventListener("mouseover", function () {
+        thumbnails[i].addEventListener("click", function () {
           console.log(activeImages);
 
           if (activeImages.length > 0) {

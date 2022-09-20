@@ -12,7 +12,7 @@
 body {
   background-color: #ff9cae;
 }
-#back-btn {
+/* #back-btn {
   display: block;
   background-color: white;
   border-radius: 50%;
@@ -26,7 +26,7 @@ body {
   font-size: 37px;
   font-weight: 600;
   color: #ff5777;
-}
+} */
 .profile {
   position: absolute;
   top: 50%;

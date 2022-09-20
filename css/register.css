@@ -19,7 +19,7 @@ body{
   display: flex;
   margin-top: 50px;
 }
-#back-btn {
+/* #back-btn {
 display: block;
 background-color: white;
 border-radius: 50%;
@@ -33,7 +33,7 @@ left:20px;
 font-size: 38px;
 font-weight: 600;
 color: #ff5777;
-}
+} */
 .image{
     display: flex;
     justify-content: center;
