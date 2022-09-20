@@ -140,6 +140,9 @@ button:hover {
   .notification-content {
     width: 220px;
   }
+  .profile{
+    margin-top: 20px;
+  }
 }
 @media (max-width:800px){
   .profile-body{
