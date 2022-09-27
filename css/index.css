@@ -13,6 +13,7 @@
   height: 60px;
   display: flex;
   padding: 10px;
+  border-bottom: 1px solid #ebebeb;
 }
 .navbar .nav-item1 .logo img {
   height: 45px;
